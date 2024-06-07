@@ -13,7 +13,7 @@ dotenv.config();
 
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL],
+    origin: "https://blogg-frontend-rouge.vercel.app/",
     methods: ["GET", "PUT", "DELETE", "POST"],
     credentials: true,
   })
