@@ -30,6 +30,11 @@ app.use(
   })
 );
 
+// Routes
+app.get("/", (req, res) => {
+  res.send("Welcome to the homepage!"); // Send a welcome message for the root URL
+});
+
 app.use("/api/v1/user", userRouter);
 app.use("/api/v1/blog", blogRouter);
 
